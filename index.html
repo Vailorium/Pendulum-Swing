@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <canvas id="mainCanvas" height="5000" width="5000"></canvas>
+</body>
+<div id="data">
+    <p>Gravity: <input id="gravity" value="9.81">ms⁻²</p>
+    <p>Velocity: <span id="velocity"></span>ms⁻¹</p>
+    <p>Mass: <input id="mass" value="1">kg</p>
+    <p>Angle: <span id="angle"></span>°</p>
+    <p>Period: <span id="period"></span>s</p>
+    <p>Adjusted Period: <span id="fakePeriod"></span>s</p>
+
+    <button onclick="changeValues()">Start</button>
+</div>
+
+<p id="FPS">FPS: <span id="FPS_COUNT">0</span></p>
+</html>
